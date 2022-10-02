@@ -104,7 +104,6 @@ const Menu = () => {
 			setDistanceFromSite(
 				parseInt(convertDistance(getDistance(currentPosition, newAvailableSites[0].position), 'km'))
 			);
-			setChooseSite(newAvailableSites[0]);
 		}
 
 		setAvailableSites(newAvailableSites);
@@ -139,7 +138,6 @@ const Menu = () => {
 			setDistanceFromSite(
 				parseInt(convertDistance(getDistance(currentPosition, newAvailableSites[0].position), 'km'))
 			);
-			setChooseSite(newAvailableSites[0]);
 		}
 
 		setAvailableSites(newAvailableSites);
@@ -157,10 +155,6 @@ const Menu = () => {
 		<div className="menu__container">
 			<div className="menu__search-bar">
 				<div className="search-selector">
-
-					<div className="symbol">
-						<img src={Symbol} alt="symbol" className="symbol-img" />
-					</div>
 					<div className="symbol1-img">
 						<img src={Symbol} alt="symbol1" className="symbol1-img" />
 					</div>

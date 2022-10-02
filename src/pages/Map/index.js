@@ -13,12 +13,12 @@ function GetIcon(_iconSize) {
 }
 
 const Map = ({ sites, onClickSite }) => {
-	const position = [32.011261, 34.774811];
+	const position = [31.890238536777023, 35.03356161672948];
 
 	return (
 		<MapContainer
 			center={position}
-			zoom={9}
+			zoom={7.2}
 			scrollWheelZoom={true}
 			style={{ borderRadius: '20px', boxShadow: '0 0 50px 0 grey', margin: '1rem auto' }}
 		>
@@ -37,7 +37,6 @@ const Map = ({ sites, onClickSite }) => {
 								<span className="description">{site.city}</span>
 								<span className="description">{site.address}</span>
 								<span className="description">{site.openingHours} </span>
-
 							</div>
 						</Popup>
 					</Marker>
